@@ -62,7 +62,7 @@ public class VotacaoPizza {
              }else if(queijo>cal&&queijo>muss){
                  System.out.println("Quatro queijos  é o sabor favorito.");
              }else{
-                 System.out.println("Opa, tivemos algum empate!");
+                 System.out.println("Opa, tivemos algum empate!!!");
              }
     }
 }
