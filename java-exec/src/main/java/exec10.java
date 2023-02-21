@@ -39,7 +39,7 @@ public class exec10 {
         }else if(cont>=4&&cont<=10){
             System.out.println("Você é sortudo");
         }else{
-            System.out.println("É melhor você parar e apostar e voltar ao trabalho!");
+            System.out.println("É melhor você parar e apostar e voltar ao trabalho!!!");
     }
     }
 }
