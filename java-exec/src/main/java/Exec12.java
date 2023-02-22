@@ -16,24 +16,25 @@ public class Exec12 {
         String userOk = "admin";
         String passOk = "2022<2023";
 
-        System.out.println("Informe o usuário: ");
-        String user = leitor.nextLine();
+        String user = "";
 
-        System.out.println("Informe a senha: ");
-        String passWord = leitor.nextLine();
+        String passWord = "";
 
         while (user != userOk && passWord != passOk) {
 
-            System.out.println("Login e/ou senha inválidos");
             System.out.println("Informe o usuário: ");
             user = leitor.nextLine();
             System.out.println("Informe a senha: ");
             passWord = leitor.nextLine();
 
+            System.out.println("Login e/ou senha inválidos");
+
             if (user.equals(userOk) && passWord.equals(passOk)) {
                 System.out.println("Login realizado com sucesso");
                 break;
+
             }
+
         }
 
     }
