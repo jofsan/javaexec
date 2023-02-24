@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class Testando {
     public static void main(String[] args) {
         Scanner leitor = new Scanner (System.in);
-        System.out.println("teste");
+        System.out.println("teste!");
         String teste = leitor.nextLine();
     }
 }
