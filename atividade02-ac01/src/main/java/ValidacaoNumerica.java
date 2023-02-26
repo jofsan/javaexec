@@ -8,19 +8,23 @@
  * @author jofss
  */
 public class ValidacaoNumerica {
-    boolean verificarPrimo(Integer numero){
-        if(numero<=1){
-            System.out.format("O numero %d não é primo!\n ",numero);
-            return false;
-        }for(int i = 2;i<=Math.sqrt(numero);i++){
-            if(numero% i ==0){
-                System.out.format("O numero %d não é primo\n",numero);
-                return false;
+
+    String verificarPrimo(Integer numero, String frase, String frase2) {
+        frase = String.format("O numero %d não é primo!", numero);
+        frase2 = String.format("O numero %d é primo", numero);
+        
+        if (numero <= 1) {
+
+            return frase;
+
+        }
+        for (int i = 2; i <= Math.sqrt(numero); i++) {
+            if (numero % i == 0) {
+
+                return frase;
             }
         }
-        
-        System.out.format("O numero %d é primo\n",numero);
-        return true;
+
+        return frase2;
     }
 }
-
