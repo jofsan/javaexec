@@ -14,8 +14,9 @@ public class TesteValidacao {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         ValidacaoNumerica valid = new ValidacaoNumerica();
-        System.out.println("Digite um número: ");
-        Integer numeroUser = leitor.nextInt();
+        String frase="";
+        String frase2="";       
+        Integer numeroUser = 0;
         int cont = 0;
        
        
@@ -23,11 +24,11 @@ public class TesteValidacao {
                 cont++;
                 System.out.println("Digite um número: ");
                 numeroUser = leitor.nextInt();
-                System.out.println(valid.verificarPrimo(numeroUser));
+                System.out.println(valid.verificarPrimo(numeroUser,frase,frase2));
             }
-       if(numeroUser<0){
+      
             System.out.println("Programa finalizado!");
-       }
+       
            
         }
         }
