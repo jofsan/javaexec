@@ -17,16 +17,19 @@ public class Treino1 {
          
          System.out.println("Digite um número entre 0 e 10: ");
          Integer numeroUser = leitor.nextInt();
+         //variavel que contem o número sorteado
          Integer numeroSorteado = ThreadLocalRandom.current().nextInt(0, 11);
          
          System.out.println("numero sorteado: \n"+numeroSorteado);
          int cont =0;
          while(numeroSorteado!=numeroUser){
              cont++;
+             //o print que mostrara os numeros sorteados enquanto for diferente do escolhido
              System.out.println(numeroSorteado = ThreadLocalRandom.current().nextInt(0, 11));
             
            
          }
+         //condições fora do while definindo a sorte do usuario
          System.out.println("Acertou!");
            if(cont<=3){
                  System.out.println("Você é muito sortudo!");
